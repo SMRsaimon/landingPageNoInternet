@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap"
       rel="stylesheet"
     />
     <title>Payment Error</title>
@@ -25,7 +25,7 @@
     <style>
       /**/
       :root {
-        --main-color: #b9afeea5;
+        --main-color: white;
         --stroke-color: black;
       }
       /**/
@@ -34,21 +34,29 @@
       }
       h1 {
         margin-top: 20px;
-        color: var(--stroke-color);
-        font-family: "Pathway Gothic One", sans-serif;
+        color:#34315D;
+        font-family: "Hind Siliguri", sans-serif;
         font-size: 5rem;
         line-height: 5rem;
         font-weight: 200;
         text-align: center;
       }
+
+      @media(max-width:900px){
+
+         h1{
+            font-size: 3rem;
+
+         }
+      }
       h2 {
         margin: 20px auto 30px auto;
-        font-family: "Encode Sans Semi Condensed", Verdana, sans-serif;
+        font-family: "Hind Siliguri", sans-serif;
         font-size: 1.5rem;
         font-weight: 200;
         text-align: center;
       }
-      
+
       h1,
       h2 {
         -webkit-transition: opacity 0.5s linear, margin-top 0.5s linear; /* Safari */
@@ -59,11 +67,17 @@
         margin-top: 0px;
         opacity: 0;
       }
+      p,
+      li {
+        font-size: 18px;
+        color: #575757;
+        font-weight: 300;
+        font-family: "Hind Siliguri", sans-serif;
+      }
 
-      .number{
-        font-family: "Pathway Gothic One", sans-serif;
+      .number {
+        font-family: "Hind Siliguri", sans-serif;
         font-size: 30px;
-
       }
       .gears {
         position: relative;
@@ -78,7 +92,7 @@
         height: 120px;
         margin: 0 auto;
         border-radius: 50%;
-        background: var(--stroke-color);
+        background: red;
       }
       .gear:before {
         position: absolute;
@@ -230,80 +244,134 @@
         display: flex;
         justify-content: center;
       }
+
+      .text-center{
+          display: flex;
+          justify-content: center;
+      }
     </style>
   </head>
 
-  <body>
+  <body style="margin-bottom: 20px; margin-top: 10px;">
     <div class="container">
-      <h1>Promee Internet</h1>
-      <h2 class="text-danger">
-        <b> বিল পরিশোধ না করায় আপনার সংযোগ বিচ্ছিন্ন করা হয়েছে।</b>
-      </h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Promee Internet</h1>
+            </div>
 
-      <div class="noInternetIcon">
-        <svg
-          width="100px"
-          height="100px"
-          viewBox="13 0 285 306"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <g
-            id="Group-3"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            transform="translate(13.000000, 0.000000)"
-          >
-            <polygon
-              id="Path"
-              fill="#666666"
-              points="256.351585 91.6642857 213.916427 91.6642857 213.916427 80.0385714 284.492795 80.0385714 284.492795 14.3085714 270.198847 14.3085714 270.198847 0 155.400576 0 155.400576 14.3085714 141.553314 14.3085714 141.553314 105.972857 127.259366 105.972857 127.259366 119.834286 106.26513 119.834286 106.26513 134.142857 85.2708934 134.142857 85.2708934 148.451429 70.9769452 148.451429 70.9769452 162.312857 45.0691643 162.312857 45.0691643 148.004286 31.221902 148.004286 31.221902 134.142857 16.9279539 134.142857 16.9279539 105.972857 0.847262248 105.972857 0.847262248 192.718571 14.6945245 192.718571 14.6945245 207.027143 28.9884726 207.027143 28.9884726 220.888571 42.8357349 220.888571 42.8357349 235.197143 57.129683 235.197143 57.129683 249.058571 70.9769452 249.058571 70.9769452 305.398571 101.351585 305.398571 101.351585 289.301429 87.5043228 289.301429 87.5043228 277.228571 101.351585 277.228571 101.351585 263.367143 115.645533 263.367143 115.645533 249.058571 127.259366 249.058571 127.259366 263.367143 141.553314 263.367143 141.553314 305.398571 171.927954 305.398571 171.927954 289.301429 157.634006 289.301429 157.634006 235.197143 171.927954 235.197143 171.927954 220.888571 185.775216 220.888571 185.775216 199.872857 200.069164 199.872857 200.069164 150.687143 211.682997 150.687143 211.682997 164.548571 228.210375 164.548571 228.210375 134.142857 200.069164 134.142857 200.069164 108.208571 256.351585 108.208571"
-            ></polygon>
-            <rect
-              id="Rectangle"
-              fill="#FFFFFF"
-              x="169.247839"
-              y="20.5685714"
-              width="16.9740634"
-              height="16.9914286"
-            ></rect>
-          </g>
-        </svg>
-      </div>
+            <div class="col-md-6">
+               
+                <h2 class="text-danger">
+                  <b> বিল পরিশোধ না করায় আপনার সংযোগ বিচ্ছিন্ন করা হয়েছে।</b>
+                </h2>
+          
+                <div class="noInternetIcon">
+                  <svg
+                    width="100px"
+                    height="100px"
+                    viewBox="13 0 285 306"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      id="Group-3"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                      transform="translate(13.000000, 0.000000)"
+                    >
+                      <polygon
+                        id="Path"
+                        fill="black"
+                        points="256.351585 91.6642857 213.916427 91.6642857 213.916427 80.0385714 284.492795 80.0385714 284.492795 14.3085714 270.198847 14.3085714 270.198847 0 155.400576 0 155.400576 14.3085714 141.553314 14.3085714 141.553314 105.972857 127.259366 105.972857 127.259366 119.834286 106.26513 119.834286 106.26513 134.142857 85.2708934 134.142857 85.2708934 148.451429 70.9769452 148.451429 70.9769452 162.312857 45.0691643 162.312857 45.0691643 148.004286 31.221902 148.004286 31.221902 134.142857 16.9279539 134.142857 16.9279539 105.972857 0.847262248 105.972857 0.847262248 192.718571 14.6945245 192.718571 14.6945245 207.027143 28.9884726 207.027143 28.9884726 220.888571 42.8357349 220.888571 42.8357349 235.197143 57.129683 235.197143 57.129683 249.058571 70.9769452 249.058571 70.9769452 305.398571 101.351585 305.398571 101.351585 289.301429 87.5043228 289.301429 87.5043228 277.228571 101.351585 277.228571 101.351585 263.367143 115.645533 263.367143 115.645533 249.058571 127.259366 249.058571 127.259366 263.367143 141.553314 263.367143 141.553314 305.398571 171.927954 305.398571 171.927954 289.301429 157.634006 289.301429 157.634006 235.197143 171.927954 235.197143 171.927954 220.888571 185.775216 220.888571 185.775216 199.872857 200.069164 199.872857 200.069164 150.687143 211.682997 150.687143 211.682997 164.548571 228.210375 164.548571 228.210375 134.142857 200.069164 134.142857 200.069164 108.208571 256.351585 108.208571"
+                      ></polygon>
+                      <rect
+                        id="Rectangle"
+                        fill="#FFFFFF"
+                        x="169.247839"
+                        y="20.5685714"
+                        width="16.9740634"
+                        height="16.9914286"
+                      ></rect>
+                    </g>
+                  </svg>
+                </div>
+          
+                <div style="min-height: 200px" >
+                  <div class="loading">
+                    <div class="gears">
+                      <div class="gear one">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </div>
+                      <div class="gear two">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </div>
+                      <div class="gear three">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-      <div style="min-height: 200px" class="row">
-        <div class="loading">
-          <div class="gears">
-            <div class="gear one">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="text-success">
+                        <b>পুনরায় সংযোগ পেতে নিচের দেয়া বিকাশ নাম্বারে বিল পরিশোধ করুন</b>
+                      </h2>
+                      <h2 class="number">বিকাশ : 01757053084</h2>
+                    </div>
+                  </div>
+
             </div>
-            <div class="gear two">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+
+            <div style="margin-top: 0px;" class="col-md-5 offset-md-1">
+
+              
+            
+
+                    <h2 style="    border: 4px solid red;
+                    padding: 10px; font-size: 24px;
+                font-weight: 500; color:#34315D">পেমেন্ট বিকাশ করতে নীচের ধাপগুলো অনুসরণ করুন-</h2>
+            
+                    <ol>
+                      <li>*২৪৭# ডায়াল করে বিকাশ মোবাইল মেন্যুতে যান</li>
+                      <li>“পেমেন্ট” সিলেক্ট করুন</li>
+                      <li>
+                        আপনি যে মার্চেন্টকে পেমেন্ট করতে চান তার মার্চেন্ট বিকাশ একাউন্ট
+                        নাম্বার দিন
+                      </li>
+                      <li>আপনি যে পরিমাণ টাকা পেমেন্ট করতে চান তার পরিমাণ লিখুন</li>
+                      <li>
+                        আপনার কেনাকাটার একটি তথ্যসূত্র দিন (আপনি আপনার লেনদেনের উদ্দেশ্য
+                        একটি শব্দের মধ্যে উল্লেখ করতে পারেন, উদাহরণস্বরূপ, বিল)*
+                      </li>
+                      <li>
+                        কাউন্টার নাম্বারটি লিখুন (কাউন্টারে অবস্থানরত বিক্রেতা আপনাকে
+                        নাম্বারটি বলে দেবেন)
+                      </li>
+                      <li>আপনার বিকাশ মোবাইল মেন্যু পিনটি দিয়ে পেমেন্ট সম্পন্ন করুন</li>
+                    </ol>
+                    <p>আপনি বিকাশ থেকে একটি কনফার্মেশন মেসেজ পাবেন।</p>
+            
+                    <p style="color: red">
+                      *যদি তথ্যসূত্র বা কাউন্টার নাম্বার কিংবা দুটোই প্রযোজ্য না হয়, তাহলে
+                      আপনি এই ধাপগুলো “০” প্রবেশ করিয়ে এরিয়ে যান।
+                    </p>
+            
+
             </div>
-            <div class="gear three">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-          </div>
         </div>
-      </div>
+  
 
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-success">
-            <b>পুনরায় সংযোগ পেতে নিচের দেয়া বিকাশ নাম্বারে বিল পরিশোধ করুন</b>
-          </h2>
-           <h2 class="number">বিকাশ : 01757053084</h2>
-        </div>
-      </div>
+  
     </div>
 
     <script>
